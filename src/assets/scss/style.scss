@@ -1,0 +1,95 @@
+@import "_reset.scss";
+
+// === font-face ===
+// Gilroy
+@font-face {
+  font-family: "Gilroy";
+  src: url("assets/fonts/Gilroy-Heavy.woff") format("woff");
+  src: url("assets/fonts/Gilroy-Heavy.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("assets/fonts/Gilroy-Medium.woff") format("woff");
+  src: url("assets/fonts/Gilroy-Medium.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("assets/fonts/Gilroy-Regular.woff") format("woff");
+  src: url("assets/fonts/Gilroy-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+}
+
+// GothamPro
+@font-face {
+  font-family: "GothamPro";
+  src: url("assets/fonts/GothamPro-Bold.woff") format("woff");
+  src: url("assets/fonts/GothamPro-Bold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: "GothamPro";
+  src: url("assets/fonts/GothamPro-Medium.woff") format("woff");
+  src: url("assets/fonts/GothamPro-Medium.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: "GothamPro";
+  src: url("assets/fonts/GothamPro.woff") format("woff");
+  src: url("assets/fonts/GothamPro.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+}
+
+// Montserrat
+@font-face {
+  font-family: "Montserrat";
+  src: url("assets/fonts/Montserrat-Bold.woff") format("woff");
+  src: url("assets/fonts/Montserrat-Bold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("assets/fonts/Montserrat-SemiBold.woff") format("woff");
+  src: url("assets/fonts/Montserrat-SemiBold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 600;
+}
+
+// === variables ===
+@import "_variables.scss";
+
+// === mixins ===
+@import "_mixins.scss";
+
+/* Default Styles */
+*,
+*::after,
+*::before {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.body {
+  background-color: $main-black-color;
+}
+
+a {
+  text-decoration: none;
+}
+
+// === header ===
