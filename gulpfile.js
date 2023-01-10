@@ -37,7 +37,7 @@ const path = {
     images:
       srcPath +
       "assets/img/**/*.{jpg,png,svg,gif,ico,webp,webmanifest,xml,json}",
-    fonts: srcPath + "assets/fonts/**/*.{eot,woff,woff2,ttf,svg}",
+    fonts: srcPath + "assets/fonts/**/*.{eot,woff,woff2,ttf,svg,otf}",
   },
   watch: {
     html: srcPath + "**/*.html",
@@ -46,7 +46,7 @@ const path = {
     images:
       srcPath +
       "assets/img/**/*.{jpg,png,svg,gif,ico,webp,webmanifest,xml,json}",
-    fonts: srcPath + "assets/fonts/**/*.{eot,woff,woff2,ttf,svg}",
+    fonts: srcPath + "assets/fonts/**/*.{eot,woff,woff2,ttf,svg,otf}",
   },
   clean: "./" + distPath,
 };
