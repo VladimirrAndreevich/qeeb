@@ -1,0 +1,15 @@
+//=== common ====
+.burger {
+  display: none;
+}
+
+//=== header ====
+.header {
+  &__list {
+    display: flex;
+  }
+
+  &__btn {
+    display: flex;
+  }
+}

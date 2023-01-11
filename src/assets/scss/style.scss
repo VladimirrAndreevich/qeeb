@@ -4,8 +4,8 @@
 // Gilroy
 @font-face {
   font-family: "Gilroy";
-  src: url("assets/fonts/gilroy/Gilroy-Extrabold.woff") format("woff");
-  src: url("assets/fonts/gilroy/Gilroy-Extrabold.woff2") format("woff2");
+  src: url("../fonts/gilroy/Gilroy-Extrabold.woff") format("woff");
+  src: url("../fonts/gilroy/Gilroy-Extrabold.woff2") format("woff2");
   font-style: normal;
   font-weight: 800;
 }
@@ -13,7 +13,7 @@
 // monument extended
 @font-face {
   font-family: "MonumentExtended";
-  src: url("assets/fonts/monument/MonumentExtended-Regular.otf") format("otf");
+  src: url("../fonts/monument/MonumentExtended-Regular.otf") format("otf");
   font-style: normal;
   font-weight: 400;
 }
@@ -38,8 +38,8 @@
 
 .container {
   width: 100%;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 .body {
@@ -50,10 +50,91 @@ a {
   text-decoration: none;
 }
 
+.btn {
+  display: inline-block;
+
+  height: 50px;
+  padding: 15px 29px;
+  border-radius: 50px;
+
+  background-color: $secondary-color;
+
+  font-family: "Red Rose", cursive;
+  color: $additional-black-color;
+  @include font(400, 1rem, 1.25em);
+
+  transition: color $transition-duration $transition-timing-function;
+
+  &:hover {
+    color: white;
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+
+  color: white;
+  font-family: "Gilroy", sans-serif;
+  @include font(800, 2.25rem, 1em);
+
+  &::before {
+    content: "";
+    display: inline-block;
+
+    width: 45px;
+    height: 50px;
+    margin-right: 8px;
+
+    background-image: url(../img/logo_icon.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+
+.burger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  width: 25px;
+  height: 20px;
+  &__line {
+    height: 2px;
+
+    background-color: white;
+  }
+}
+
 // === header ===
-p {
-  font-family: "Gilroy", serif;
-  font-weight: 800;
-  font-size: 40px;
-  color: wheat;
+.header {
+  padding-top: 40px;
+
+  & > .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__list {
+    display: none;
+    column-gap: 40px;
+  }
+
+  &__nav-link {
+    font-family: "Red Rose", cursive;
+    color: $main-white-color;
+    @include font(400, 1.125rem, 1em);
+
+    transition: color $transition-duration $transition-timing-function;
+
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+
+  &__btn {
+    display: none;
+  }
 }

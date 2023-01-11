@@ -1,0 +1,11 @@
+.burger {
+    display: none;
+}
+
+.header__list {
+    display: flex;
+}
+
+.header__btn {
+    display: flex;
+}
